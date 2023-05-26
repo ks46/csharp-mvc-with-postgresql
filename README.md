@@ -1,4 +1,5 @@
-# C# Entity Framework Intro
+# C# WebAPI MVC with a Postgres Database.
+
 
 1. Fork this repository
 2. Clone your fork to your machine
@@ -9,18 +10,24 @@
 		  extension method.  See also how the data is populated via the Seed() method call.  Note how we are 
 		  randomly generating names of both authors & books!
 
+## Key Outcomes   
+
+further knowledge of Entity Framework
+understand how to use a cloud db like ElephantSql
+connect to database in a secure way
+
+
 ## Exercise   
 
-Complete the LibraryRepository.cs.  Finish all methods, replacing "throw new NotImplementedException();" with 
-   relevant C# Entity Framework code by using the LibraryContext.  
+Add the LibraryRepository.cs from the previous exercise.   
+Setup a free account on https://www.elephantsql.com/  and connect your DataContext to this.  
+Don't forget to use a secure method of storing your connection string AND ENSURE THIS DOESN'T GET POSTED TO GITHUB!
+We will discuss how to to this as a group.
 
-## Extension    
-Add a Publisher Model with propertyies Id(int) and Name(string),  a PublisherController (if you can create in a similar way to AuthorApi.cs/BookApi.cs then great!   
-otherwise create in the usual way in the Controllers folder.), update ILibraryRepository,  LibraryRepository and LibraryContext  
-and any other place you feel relevant to wire in the Publisher into the project.  Don't forget to link the Publisher by Id as a foreign key to the Book object.
 
-In the Seed class populate this with some test data.  You can call the 
-GeneratePublisherName() to generate a name or make up your own version of this.
+##  Extension
+
+If you completed the extension in the previous exercise you can add to this repo if you wish.
 
 
 
