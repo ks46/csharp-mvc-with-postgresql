@@ -1,33 +1,42 @@
 # C# WebAPI MVC with a Postgres Database.
 
+Use the MVC pattern with Entity Framework to communicate with a Postgres database
+Create an API which has a database behind it
+Use Database Migrations and C# classes to create and model the database
 
-1. Fork this repository
-2. Clone your fork to your machine
-3. Open the ef.intro.sln in Visual Studio
-5. Note:  There are no controllers in this project!!  A current way of writing endpoints is in the EndPoint directory.
-		  See How the AuthorApi.cs & BookApi.cs both are extension methods of the WebApplication class which 
-		  is returned in the Program.cs from a builder.Build() call.  This way we can call this to initialize from the 
-		  extension method.  See also how the data is populated via the Seed() method call.  Note how we are 
-		  randomly generating names of both authors & books!
+Instructions
+Fork this repository
+Clone your fork to your machine
+Open the project in Visual Studio
 
-## Key Outcomes   
+## Core Exercise
+Look at the OpenAPI schema below, your task is to set up a remote Postgres Database on ElephantSQL and connect to it from your code.  Your Swagger should have all CRUD functionality for the Employee Model.
 
-further knowledge of Entity Framework
-understand how to use a cloud db like ElephantSql
-connect to database in a secure way
+The database table for Employees will be something like this:
+
+Field	Type	Information
+id	Serial	PK
+name	VARCHAR(250)	
+jobName	VARCHAR(250)	
+salaryGrade	VARCHAR(10)	
+department	VARCHAR(50)	
+
+You should use C#, EntityFramework the Postgres ElephantSQL.
+
+Add tests as usual to test the functionality of the Model layer, you do not need to test the repository code directly.
+
+Here is the spec for the Core Criteria: [Core Spec](https://boolean-uk.github.io/java-api-mvc-with-postgres/)
+
+## Extension Exercise
+
+Add in the rest of the Schema based on the OpenAPI Spec linked below, modify the original Employee table to use Foreign Keys as appropriate based on the two new tables you will create, you can use Flyway to help run the migrations and populate the tables.
+
+Add in models and other classes to enable API calls to be made which will match the endpoints specified in the schema.
+
+Here is the spec for the Extension Criteria: [Extension Spec](https://boolean-uk.github.io/java-api-mvc-with-postgres/extensions.html)
 
 
-## Exercise   
 
-Add the LibraryRepository.cs from the previous exercise.   
-Setup a free account on https://www.elephantsql.com/  and connect your DataContext to this.  
-Don't forget to use a secure method of storing your connection string AND ENSURE THIS DOESN'T GET POSTED TO GITHUB!
-We will discuss how to to this as a group.
-
-
-##  Extension
-
-If you completed the extension in the previous exercise you can add to this repo if you wish.
 
 
 
