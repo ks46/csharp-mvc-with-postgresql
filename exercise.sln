@@ -7,12 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercise.api", "exercise.ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exercise.tests", "exercise.tests\exercise.tests.csproj", "{0302FBA4-E192-4E1B-ACE4-476F29807442}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{9E3FBD1D-0D2E-490C-B406-BBB775ED225C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataContext", "DataContext", "{7F925C56-2B5A-4175-9E39-5B39C500E0BA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{289B9430-9A3B-4A3B-BE7A-2C8E2B77617E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01F50C18-4EE2-4B91-B7BA-3A76B3046681}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
