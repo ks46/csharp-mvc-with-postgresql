@@ -8,7 +8,16 @@ Look at the OpenAPI schema below, your task is to set up a remote Postgres Datab
 
 The database table for Employees will be something like this:
 
-Field Type Information id Serial PK name VARCHAR(250) jobName VARCHAR(250) salaryGrade VARCHAR(10) department VARCHAR(50)
+
+| Field       | Type         | Information |
+|-------------|--------------|-------------|
+| id          | Serial       | PK          |
+| name        | VARCHAR(250) |             |
+| jobName     | VARCHAR(250) |             |
+| salaryGrade | VARCHAR(10)  |             |
+| department  | VARCHAR(50)  |             |
+
+
 
 You should use C#, EntityFramework the Postgres ElephantSQL.
 
