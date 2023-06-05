@@ -30,7 +30,7 @@ Here is the spec for the Core Criteria: [Core Spec](https://boolean-uk.github.io
 
 # Extension Exercise
 
-Add in the rest of the Schema based on the OpenAPI Spec linked below, modify the original Employee table to use Foreign Keys as appropriate based on the two new tables you will create, you can use Flyway to help run the migrations and populate the tables.
+Add in the rest of the Schema based on the OpenAPI Spec linked below, modify the original Employee table to use Foreign Keys as appropriate based on the two new tables you will create, you can use EntityFramework to help run the migrations and populate the tables.
 
 Add in models and other classes to enable API calls to be made which will match the endpoints specified in the schema.
 
