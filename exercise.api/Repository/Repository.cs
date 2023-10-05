@@ -13,5 +13,20 @@ namespace exercise.api.Repository
         {
             throw new NotImplementedException();
         }
+
+        public Employee InsertEmployee(Employee employee)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Employee UpdateEmployee(int id, Employee employee)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Employee DeleteEmployee(int id, Employee employee)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
