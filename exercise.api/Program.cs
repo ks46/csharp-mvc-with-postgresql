@@ -1,4 +1,4 @@
-using exercise.api.DataContext;
+using exercise.api.Data;
 using exercise.api.EndPoints;
 using exercise.api.Repository;
 

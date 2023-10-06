@@ -1,7 +1,7 @@
 ﻿using exercise.api.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace exercise.api.DataContext
+namespace exercise.api.Data
 {
     public class DataContext : DbContext
     {
