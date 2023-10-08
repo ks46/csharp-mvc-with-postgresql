@@ -75,7 +75,7 @@ namespace exercise.api.EndPoints
             {
                 return await Task.Run(() =>
                 {
-                    Employee e = service.GetEmployee(id);
+                    Employee? e = service.GetEmployee(id);
                     if (e == null)
                         return Results.NotFound();
                     return Results.Ok(e);
@@ -103,7 +103,7 @@ namespace exercise.api.EndPoints
             {
                 return await Task.Run(() =>
                 {
-                    Employee e = service.UpdateEmployee(id, employee);
+                    Employee? e = service.UpdateEmployee(id, employee);
                     if (e == null)
                         return Results.NotFound();
                     return Results.Ok(e);
@@ -123,13 +123,13 @@ namespace exercise.api.EndPoints
         /// </returns>
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        private static async Task<IResult> DeleteEmployee(int id, Employee employee, IRepository service)
+        private static async Task<IResult> DeleteEmployee(int id, IRepository service)
         {
             try
             {
                 return await Task.Run(() =>
                 {
-                    Employee e = service.DeleteEmployee(id, employee);
+                    Employee? e = service.DeleteEmployee(id);
                     if (e == null)
                         return Results.NotFound();
                     return Results.Ok(e);
